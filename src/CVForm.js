@@ -142,7 +142,7 @@ const CVForm = ({ onSubmit }) => {
                     <label className="label">
                         <span className="label-text">End Year</span>
                     </label>
-                    <input type="text" placeholder="Type here" className="input input-bordered w-full"  value={edu.endYear}
+                    <input type="number" placeholder="Type here" className="input input-bordered w-full"  value={edu.endYear}
                     onChange={(e) => handleEducationChange(index, 'endYear', e.target.value)}
                     required />
                 </div>
@@ -182,7 +182,7 @@ const CVForm = ({ onSubmit }) => {
                     <label className="label">
                         <span className="label-text">Start Year</span>
                     </label>
-                    <input type="text" placeholder="Type here" className="input input-bordered w-full"   value={exp.startYear}
+                    <input type="number" placeholder="Type here" className="input input-bordered w-full"   value={exp.startYear}
                     onChange={(e) => handleWorkExperienceChange(index, 'startYear', e.target.value)}
                     required />
             </div>
@@ -190,7 +190,7 @@ const CVForm = ({ onSubmit }) => {
                     <label className="label">
                         <span className="label-text">End Year</span>
                     </label>
-                    <input type="text" placeholder="Type here" className="input input-bordered w-full"    value={exp.endYear}
+                    <input type="number" placeholder="Type here" className="input input-bordered w-full"    value={exp.endYear}
                     onChange={(e) => handleWorkExperienceChange(index, 'endYear', e.target.value)}
                     required />
             </div>
@@ -230,7 +230,7 @@ const CVForm = ({ onSubmit }) => {
                 <label className="label">
                         <span className="label-text">Year</span>
                 </label>
-                <input type="text" placeholder="Type here" className="input input-bordered w-full"      value={project.year}
+                <input type="number" placeholder="Type here" className="input input-bordered w-full"      value={project.year}
                 onChange={(e) => handleProjectChange(index, 'year', e.target.value)}
                 required />
             </div>
@@ -268,7 +268,7 @@ const CVForm = ({ onSubmit }) => {
                 <label className="label">
                     <span className="label-text font-bold text-center mt-5">Skills</span>
                 </label>
-                <input type="number" placeholder="Type here" className="input input-bordered w-full" value={skills} onChange={(e) => setSkills(e.target.value)}/>
+                <input type="text" placeholder="Type here" className="input input-bordered w-full" value={skills} onChange={(e) => setSkills(e.target.value)}/>
             </div>
         <button type="submit" className="btn btn-info mt-2">View and Print CV</button>
       </form>
